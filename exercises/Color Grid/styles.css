@@ -1,0 +1,77 @@
+main{
+    width: 80%;
+    margin: auto;
+}
+
+
+.pink{
+    background-color: pink;
+    height: 150px;
+   
+    width: 98.5%;
+    max-width: 99%;
+    border: 5px solid white;
+}
+.red1{
+    background-color: coral;
+    height: 150px;
+    display: inline-block;
+    width: 24%;
+    border: 5px solid white;
+    
+}
+.red2{
+      background-color: coral;
+    height: 150px;
+    display: inline-block;
+    width: 24%;
+    border: 5px solid white;
+}
+.red3{
+      background-color: coral;
+    height: 150px;
+    display: inline-block;
+    width: 23%;
+    
+    border: 5px solid white;
+    
+}
+.red4{
+      background-color: coral;
+    height: 150px;
+    display: inline-block;
+    width: 23%;
+
+    border: 5px solid white;
+
+}
+.blue1{
+    background-color: darkgreen;
+    height: 150px;
+    display: inline-block;
+    width: 49%;
+    border: 5px solid white;
+}
+.blue2{
+    background-color: darkgreen;
+    height: 150px;
+    display: inline-block;
+    width: 48%;
+   border: 5px solid white;
+}
+.green1{
+    background-color: royalblue;
+    height: 150px;
+    display: inline-block;
+    width: 77%;
+    
+    border: 5px solid white;
+}
+.green2{
+    background-color: lightgreen;
+    height: 150px;
+    display: inline-block;
+    width: 20%;
+    
+    border: 5px solid white;
+}

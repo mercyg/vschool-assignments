@@ -1,0 +1,54 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(SuperMario256.ttf);
+}
+
+div, p, h3{
+    font-family: myFirstFont;
+}
+
+.navbar-header{
+    background-color: orange;
+    height:57px;
+    text-align: center;
+    vertical-align: middle;
+   
+}
+#change{
+     transform: translateY(60%);
+}
+#letter{
+    margin-top:45px;
+}
+#text{
+    margin-top:34px;
+    margin-left:400px;
+    margin-right:400px;
+    font-size:30px
+   
+}
+h3,p{
+    color:red
+}
+
+#red{
+    background-color: red;
+    height:450px;
+}
+.img-responsive{
+    margin-left: 500px;
+    margin-top: 45px;
+}
+#id2{
+    height: 250px;
+}
+#id3{
+    height:70px;
+     background-color: orange;
+}
+#imags{
+    width:60px;
+    height: auto;
+    margin-top:0;
+    float:right;
+}

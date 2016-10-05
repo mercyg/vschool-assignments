@@ -1,0 +1,58 @@
+.navbar-inverse .navbar-brand{
+    color: grey;
+    font-size: 33px;
+}
+.navbar-inverse{
+    height: 70px;
+}
+main{
+    background-color: goldenrod;
+    margin-bottom: 60px;
+}
+.media img{
+    width:200px;
+    height:200px;
+}
+h1{
+    color: brown
+}
+.media-heading{
+    margin-left: 45px;
+}
+.media-object.img-thumbnail{
+    margin-left: 40px;
+    background-color:darkslategray;
+}
+#firstmario{
+    background-color:cornflowerblue;
+    margin-bottom: 20px;
+    border:double;
+}
+.bigs{
+    font-size:35px;
+}
+
+.h3, h3{
+    color:yellowgreen;
+    font-size: 55px;
+}
+#secondmario{
+    background-color: cadetblue;
+    margin-bottom: 20px;
+    border:double;
+}
+#thirdmario{
+    background-color: lightcoral;
+    margin-bottom: 20px;
+    border:double;
+}
+input{
+    display: inline-block;
+    width: 62px;
+}
+button{
+    margin-top: 10px;
+}
+footer{
+    background-color: grey;
+}

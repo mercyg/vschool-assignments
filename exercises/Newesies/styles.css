@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+}
+img{
+    display: block
+    
+}
+
+.par1{
+    display: inline-block ;
+    width: 30%;
+}
+.par2{
+    display:inline-block ;
+    width: 30%;
+}
+.par3{
+    display:inline-block;
+    width: 30%;
+}
+.highlight{
+    font-family: sans-serif;
+    color: darkcyan;
+}
+img{
+    border-radius: 8px;
+    width:440px;
+
+}
+.underline{
+    text-decoration:overline;
+}

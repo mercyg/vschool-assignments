@@ -1,0 +1,29 @@
+div{
+     border: 5px solid white;
+}
+#color1{
+    background-color: cornflowerblue;
+    height:150px;
+    
+}
+#color2{
+    background-color: coral;
+    height: 150px;
+}
+.container{
+    margin-top: 60px;
+}
+#color3{
+    background-color: crimson;
+    height: 150px;
+}
+
+#color2{
+    background-color: darkcyan;
+}
+#color4{
+    background-color: indianred;
+}
+#color5{
+    background-color: darkgreen;
+}
