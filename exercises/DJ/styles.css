@@ -1,0 +1,6 @@
+#box{
+    height: 150px;    
+    border-style: double;
+    border-width:5px;
+    width: 150px;
+}

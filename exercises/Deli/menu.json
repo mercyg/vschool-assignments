@@ -1,0 +1,63 @@
+{
+    "appetizer": [{
+        "name": "bruschitta",
+        "ingredients ": ["tomatoes", "olive oil", "garlic"],
+        "description ": "Deligt full test"
+    },{
+        "name": "artichoke and spinach dip",
+        "ingredients ": ["spinach", "artichoke", "cream"],
+        "description ": "Tuscan bread served with delicious blend"
+    },{
+        "name": "stuffed Mushroom",
+        "ingredients ": ["choice of cheesse", "breadcrumbs", "clams"],
+        "description ": ["Mushroom caps baked"]
+    }],
+    "cold sandwiches": [{
+        "name" : "veggi Sandwich",
+        "ingredients " : ["tomato", "salad","veggi meat"],
+        "description " : "Our world famous vegi meat with our hummus "
+    },{
+        "name": "Terrific Turkey Club",
+        "ingredients ": ["ground turkey", "garlic", "musturd"],
+        "description ": "Our latest amazing cranberry sauce comibined together"
+    }],
+    "hot sandwiches": [{
+        "name": "Hot Turkey",
+        "ingredients ": ["roasted turkey", "Parmesan chesse", "paninis"],
+        "description ": "Our turkey are made with fresh warmed grilled rustic bread"
+    },{
+        "name": "Grilled Chesse",
+        "ingredients ": ["chicken", "onion", "cheess"],
+        "description ": "served with salad amazing"
+    },{
+        "name": "Mama's Meatball sandwich",
+        "ingredients": ["meatballs", "swiss chesse", "Garlic","Marinara sauce"],
+        "description ": "Baked in pizza to giv it that pizza crunch"
+    }],
+    "dessert" : [{
+        "name": "baklava",
+        "ingredients": ["honey", "vanilla gelato", "sugar"],
+        "description": "mixed with cardmine and icecream"
+    },{
+        "name ": "Chocolate cake",
+        "ingredients": ["coco", "dark chocalate"],
+        "description ": "warm molten chocolate with seasonal sorbet"
+    },{
+        "name ": "cheese cake",
+        "ingredients" : ["cheess", "sugar", "yougrt"],
+        "description ": "amzing blah blah"
+    }],
+    "drinks" : [{
+        "name ": "phenociaan",
+        "ingredients ": ["mango juice", "orange juice", "lemonade"],
+        "description ": "light taste"
+    },{
+        "name ": "something",
+        "ingredients ": ["vodaka", "orange juice", "tea"],
+        "desciption": "light taste"
+    },{
+        "name ": "Mango Nectar",
+        "ingredients": ["Mango juice", "yougurt"],
+        "description": "fresly made "
+    }]
+}
