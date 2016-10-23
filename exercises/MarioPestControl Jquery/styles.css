@@ -12,6 +12,11 @@ main{
 .media img{
     width:200px;
     height:200px;
+    transition: transform 1s;
+    
+}
+.media img:hover{
+    transform: scale(2);
 }
 h1{
     color: brown
@@ -35,6 +40,7 @@ h1{
 .h3, h3{
     color:yellowgreen;
     font-size: 55px;
+    
 }
 #secondmario{
     background-color: cadetblue;
@@ -60,5 +66,16 @@ footer{
     background-color: black;
 }
 .chang1{
-    color: grey
+    color: grey;
+}
+#transitionchange{
+    transform-origin: left top;
+    transition: transform 3s;
+    
+}
+#transitionchange:hover{
+    transform: rotate(400deg);
+}
+#night{
+    
 }

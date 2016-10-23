@@ -1,0 +1,190 @@
+.navbar-inverse{
+    height: 100px;
+    background-color: white;
+    border-color: white;
+}
+li.active.dropdown{
+    background-color: whitesmoke
+}
+/*
+.carousel-inner > .item > img{
+       width:1300px;
+       height:860px;
+     }
+*/
+#inputEmail{
+    width: 40%;
+    margin-left: 300px;
+}
+#navbar{
+    margin-top:9px;
+}
+#home{
+    height: 150px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+    background-image:none !important;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+    background-color:bisque;
+}
+.navbar-nav{
+   padding-left: 40%;
+    float: none;
+}
+.nav navbar-nav.navbar-right li a{
+    color:blue;
+}
+
+input{
+    margin-left: 156px;
+    margin-top: 10px;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 1;
+   transition-property: opacity;
+  transition-duration: 6s;
+  transition-timing-function:linear;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+@media only screen and(max-width:480px){
+    #inputEmail{
+        width: 100%;
+    }
+}
+#email{
+    background-color: bisque;
+    height: 70px;
+    width: 100%
+}
+.form-control-feedback{
+    position: absolute;
+    margin-top: 12px;
+    margin-right: 450px;
+}
+#line{
+    margin-left: 40%;
+    line-height:50px;
+    letter-spacing:4px;
+}
+#article{
+    margin-left: 30%;
+    line-height:30px;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+.indent{
+    margin-left: 55px;
+}
+.indent1{
+    margin-left:100px;
+}
+#line:after,
+#line:before{
+    content:"\00a0\00a0\00a0\00a0\00a0";
+    text-decoration:line-through;
+    
+}
+#imgArticle{
+    width:90%;
+    margin-left: 75px;
+}
+#par{
+   margin-left: 75px;
+    margin-top: 12px;
+}
+/*
+#sign{
+    margin-top:55px;
+    border: 1px solid;
+    padding:10px;
+    
+}
+*/
+.titlebox{
+    width:80px;
+    margin-top: -19px;
+    margin-left: 76px;
+    background: white;
+    letter-spacing: 3px;
+    color:grey;
+    
+}
+.social {
+    margin-left:45px;
+    margin-top:55px;
+    border: 0.5px solid grey;
+    padding:10px;
+    width:250px;
+    height:50px;
+}
+.subscribe{
+    border:0.5px solid grey;
+    margin-top:55px;
+    
+}
+.social ul li {
+    margin: 10px;
+    margin-top:-12px;
+    list-style: none outside none;
+    display: inline-block;
+}
+#subscribetext{
+    margin-left:60px;
+    font-family: "BebaseNeueThin";
+    font-size: 17px;
+    letter-spacing: 3px;
+}
+
+@font-face {font-family: 'BebaseNeueThin'; 
+      src:url('BebasNeueRegular.otf');
+}
+
+

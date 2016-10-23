@@ -1,0 +1,12 @@
+img{
+    width:100%;
+    
+}
+.panel-default{
+    display: inline-block;
+    width: 30%;
+}
+.container{
+    margin-left:70px;
+    display: inline;
+}

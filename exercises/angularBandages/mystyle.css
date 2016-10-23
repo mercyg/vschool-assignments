@@ -1,0 +1,16 @@
+.container{
+    margin-top:45px;
+    border:1px solid black;
+    margin-bottom: 45px;
+}
+input{
+    margin-top:22px;
+    margin-bottom: 12px;
+}
+#comment{
+    margin-bottom: 12px;
+    margin-top:12px;
+}
+button{
+    margin-left: 45%;
+}

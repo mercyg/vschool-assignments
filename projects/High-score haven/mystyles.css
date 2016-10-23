@@ -2,6 +2,7 @@ form{
     margin-right: 30%;
     margin-left: 30%;
     margin-bottom: 45px;
+     color: darkkhaki;
 }
 table, th, td {
     border: 1px solid black;
@@ -10,4 +11,42 @@ table, th, td {
 th{
     padding-left: 55px;
     padding-bottom: 12px;
+}
+table{
+    margin-left: 20%;
+}
+
+
+h1{
+    transition: all 2s ease-in-out;
+}
+h1:hover{
+    transform: scale(2);
+    
+}
+#color{
+    color: chocolate
+}
+html{
+      background: url(https://hd.unsplash.com/reserve/aOcWqRTfQ12uwr3wWevA_14401305508_804b300054_o.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+    
+}
+#formcolor{
+    background-color: blanchedalmond;
+    height: 70%;
+    border-radius: 25px;
+}
+.f1{
+    margin-left: 70px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+#button{
+    margin-bottom: 30px;
+    margin-left: 40%;
+    font-size: 13px;
 }

@@ -7,33 +7,33 @@
 </head>
 
 <body>
-    <div>
-        <h1 align=center enter name="myform">High Score heaven</h1>
-        <form name="record">
-            <label for="name">Full Name: </label>
-            <input type="text" name="fullname" placeholder="Full Name" required/>
+   <main>
+    <div id = "form">
+    <h1 align="center" name="myform">High Score heaven Form</h1>
+        <form onsubmit = "return false" name="record" id= "formcolor">
+            <label for="name" class="f1">Full Name: </label>
+            <input type="text" class = "input1" name="fullname" placeholder="Full Name" required/>
             <br>
             <br>
-            <label for="game">Game: </label>
+            <label for="game" class="f1">Game: </label>
             <input type="text" name="gameName" placeholder="Game Name" required/>
             <br>
             <br>
-            <label for="date">Date: </label>
-            <input type="date" name="date" placeholder="Date the high score was set" />
-            <label for="score">High Score: </label>
+            <label for="date" class="f1">Date: </label>
+            <input type="date" name="date" placeholder="Date the high score was set" /><br><br>
+            <label for="score" class = "f1">High Score: </label>
             <input type="number" name="highscore" placeholder="high score" required/>
             <br>
             <br>
-            <labe for="choose">Trash Talk: </labe>
+            <labe for="choose" class="f1">Trash Talk: </labe>
             <input type="checkbox" name="talk" value="Yes " /> Yes
             <input type="checkbox" name="talk" value="No " />No
             <br>
             <br>
-            <button id="button" onclick="myfunction()">Submit</button>
+            <button id="button" type = "submit" onclick="myfunction()">Submit</button>
         </form>
-    </div>
-    <div >
         <table>
+           <h1 align="center">High Score Records</h1>
             <tr>
                 <th>Full Name</th>
                 <th>Game</th>
@@ -46,7 +46,8 @@
             </tbody>
         </table>
     
-    </div>
+       </div>
+    </main>
     <script src="highScore.js"></script>
 </body>
 

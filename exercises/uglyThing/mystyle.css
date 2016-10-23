@@ -1,0 +1,19 @@
+.container{
+    margin-top: 70px;
+}
+button{
+    margin-top: 20px;
+    margin-bottom: 34px;
+}
+#contain{
+    border:3px solid black;
+}
+input{
+    margin-top: 20px;
+}
+
+.panel.panel-default{
+    display: inline-block;
+    width: 80px;
+    float: left;
+}

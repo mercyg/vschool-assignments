@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="mystyle.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body ng-controller="hitController">
+ <h2 align="center">HitList</h2>
+ <div ng-repeat = "item in items" style="float:left">
+   
+   <div class="container">
+ 
+  <div class="panel panel-default">
+    <div class="panel-heading">Name: {{item.name}}</div>
+    <div class="panel-body"><img src={{item.image}} alt="hit"></div>
+  </div>
+</div>
+    
+     
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>  
+   <script src="angularhttp.js"></script>
+ 
+</body>
+</html>

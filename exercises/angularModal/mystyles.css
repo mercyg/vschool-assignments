@@ -1,0 +1,9 @@
+input{
+    margin-bottom: 40px;
+}
+p{
+    display: inline;
+}
+.well{
+    width:60%
+}
