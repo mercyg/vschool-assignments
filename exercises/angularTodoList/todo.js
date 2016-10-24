@@ -21,12 +21,12 @@ $scope.createtodo = function(){
     })
 }
 
-$scope.deletetodo = function(item){
+$scope.deletetodo = function(item, index){
    // item_to_delete = $scope.todolist[idx];
        // console.log(item_to_delete);
-    $http.delete("http://api.vschool.io/meheret/todo" + item.id)
+    $http.delete("http://api.vschool.io/meheret/todo/" + item._id)
         .then(function(response){
-           $scope.todolist.splice(item,1);
+           $scope.todolist.splice(index,1);
     })
 }
 
