@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body >
+    <div class="container" ng-controller="myController">
+        <div class="row">
+            <input type="number" class="form-control" ng-model="num1">
+            <input type="number" class="form-control" ng-model="num2">
+            <button type="button" class="btn btn-default" ng-click=add()>Add</button>
+             <label for="email">Addition:</label>
+             <p>{{sum}}</p>
+             
+            
+        </div>
+    </div>
+    <div class="container" ng-controller="myCtrl">
+        <div class="row">
+            <input type="number" class="form-control" ng-model="num1">
+            <input type="number" class="form-control" ng-model="num2">
+             <label for="email">Multipication</label>
+             <button type="button" class="btn btn-default" ng-click="mult()">multipley</button>
+             <label for="email">Multipication</label>
+             <p>{{multiply}}</p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="angular.js"></script>
+</body>
+</html>
