@@ -6,22 +6,7 @@
 li.active.dropdown{
     background-color: whitesmoke
 }
-/*
-.carousel-inner > .item > img{
-       width:1300px;
-       height:860px;
-     }
-*/
-/*#inputEmail{
-    width: 40%;
-    margin-left: 300px;
-}*/
-/*#text{
-  width: 25%;
-  margin-left: 450px;
-  margin-top: -25px;
-  display: inline;
-}*/
+
 
 #text{
   padding-right:30px;
@@ -34,7 +19,10 @@ li.active.dropdown{
 .form-group{
   margin-top:19px;
 }
-
+#search{
+  margin-left:154px;
+  margin-top:14px;
+}
 
 
 
@@ -174,7 +162,7 @@ li.active.dropdown{
     margin-top:55px;
     border: 0.5px solid grey;
     padding:10px;
-    width:250px;
+    width:290px;
     height:50px;
 }
 .subscribe{
@@ -182,14 +170,60 @@ li.active.dropdown{
     border:0.5px solid grey;
     margin-top:25px;
     padding:10px;
-    width:250px;
-    height:90px;
+    width:290px;
+    height:97px;
     /*font-size: 17px;*/
      letter-spacing: 2px;
 
 }
+.wishlist{
+     font-family: "BebaseNeueThin";
+    border:0.5px solid grey;
+    margin-top:25px;
+    padding:10px;
+    width:290px;
+    height:407px;
+    /*font-size: 17px;*/
+     letter-spacing: 3px;
+}
+.favorites{
+  font-family: "BebaseNeueThin";
+    border:0.5px solid grey;
+    margin-top:25px;
+    padding:10px;
+    width:290px;
+    height:997px;
+    letter-spacing: 3px;
+}
+#log{
+  width:260px;
+  margin-top:7px;
+}
+#log3{
+  width: 260px;
+  margin-top:6px;
+}
+#log2{
+  width: 260px;
+  margin-top:25px;
+}
+#log4{
+  width: 260px;
+  margin-top:-9px;
+}
+#small{
+  width: 220px;
+  height: 380px;
+}
+.carousel-inner{
+  background-color: none;
+}
+
 #dif{
   margin-top:32px;
+}
+#myCarousel{
+  height:259px;
 }
 .social ul li {
     margin: 10px;
@@ -197,6 +231,25 @@ li.active.dropdown{
     list-style: none outside none;
     display: inline-block;
 }
+.social1{
+  margin:0;
+  padding:0;
+}
+.social1 ul{
+    margin:0;
+    padding:55px;
+}
+.social1 ul li {
+    margin: 15px;
+    list-style: none outside none;
+    display: inline-block;
+    font-size:22px;
+    color:bisque;
+}
+.fa.fa-lg {
+  color:bisque;
+}
+
 #subscribetext{
     font-family: "BebaseNeueThin";
     font-size: 17px;
@@ -220,5 +273,71 @@ li.active.dropdown{
 @font-face {font-family: 'BebaseNeueThin'; 
       src:url('BebasNeueRegular.otf');
 }
+button{
+  border:2px solid bisque;
+  width: 100px;
+  height: 54px;
+  background-color: white;
+  font-family: "BebasNeueRegular";
+  color:grey;
+  letter-spacing: 2px
+}
+#smallpic{
+  border:1px solid grey;
+
+ /* height:175px;*/
+ /* width: 75%;*/
+ /* margin-top:-45px;*/
+  border-left: none;
+  border-right: none;
+}
+.titleboxs{
+    width:80px;
+    margin-top: -13px;
+    margin-left: 190px;
+    background: white;
+    letter-spacing: 3px;
+    color:grey;
+    
+}
+
+#related{
+ /* margin-top:-19px;*/
+  width: 130px;
+  height:134px;
+  display: inline;
+ /* margin:12px;*/
+  padding:10px;
+/*  margin:52px;*/
+  border:1px solid white;
+  margin-bottom: 12px;
+}
+.footer{
+  width: 120px;
+  height:110px;
+  display: inline;
+  font-size: 0;
+  border: 0px;
+  font-size: 0px;
+}
+#footers{
+  margin-left:0;
+  padding-right:0;
+  margin-right:0;
+  padding-left:0;
+  border: 0;
+}
+@media only screen and (max-width: 780px){
+    #sign {
+        display: none;
+    }
+}
+@media only screen and (max-width: 500px){
+   #search{
+      display: none;
+   }
+}
+
+
 
 
