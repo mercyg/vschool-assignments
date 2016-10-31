@@ -1,0 +1,7 @@
+body { 
+  background: url("http://images.148apps.com/2016/7/67999/266354/pokemon-go-header.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
