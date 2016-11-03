@@ -19,21 +19,21 @@
     <![endif]-->
     <link href="mystyles.css" rel="stylesheet">
     
+    
+    
 </head>
 
 <body ng-controller="myCtrl">
     <div class="container">
-        <br><br><br>
-        <h1 align="center">Weather app</h1>
-        <br><br>
-        <div class="row">
-            <div class="col-xs-12 col-sm-push-4">
-                <h2 >Temprature: {{temp}} <span ng-show="temp">celicus</span></h2>
-                <h2>{{describe}}</h2>
-                
-                
-            </div>
-        </div>
+       <ul>
+           <li><a href="#/">search</a></li>
+           <li><a href="#/city">city</a></li>
+       </ul>
+        <br>
+        <br>
+        <br>
+        <ng-view></ng-view>
+        
     </div>
     <!-- /.container -->
     
@@ -41,6 +41,8 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
     <script src="bower_components/ngGeolocation/ngGeolocation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+    
      <script src="app.js"></script>
      
 
