@@ -12,8 +12,8 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-push-4 col-sm-3">
-                        <input type="text" class="form-control-inline" placeholder="Enter another state">
-                        <button type="button" class="btn btn-info"><a href="#city">Search</a></button>
+                        <input type="text" class="form-control-inline" placeholder="Enter another state" ng-model="state">
+                        <a href="#/city"><button type="button" class="btn btn-info" ng-click="setNextLocation(state)">Search</button></a>
                         <!--                     <skycon icon = "cureentWe.forcast.ion"></skycon>-->
                     </div>
                 </div>
