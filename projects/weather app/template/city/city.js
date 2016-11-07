@@ -15,8 +15,15 @@ app.service("CityService", ["$http", function ($http) {
         return $http.get(baseUrl)
             .then(function (response) {
                 cities.weather = response.data.main.temp;
-                return cities;
+            var icons = response.data.weather[0].icon
+//                cities.icons = response.data.weather[0].icon;
+     //         return cities;
+                return $http.get("http://openweathermap.org/img/w/" + icons + ".png");
             })
+            .then(function(response){
+                cities.icons = response.data
+                return cities;
+        })
 
     };
     
@@ -31,7 +38,7 @@ app.controller("cityController", ["$scope", "CityService", "SharedService",funct
     
         CityService.cityWeather(SharedService.savedData)
             .then(function (cities) {
-                $scope.cities= cities
+                $scope.cities= cities;
             })
     
 
