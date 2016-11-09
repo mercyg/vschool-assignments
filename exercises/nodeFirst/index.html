@@ -55,8 +55,8 @@
     <button type="button" class="btn btn-primary btn-md" ng-click="createBounty(bounty)">Add bounty</button>
 
 </div>
-<button type="button" class="btn btn-primary" ng-click="getBounty()">Get Bounty</button>
-<div class="container" ng-repeat="item in bounty track by $index">
+<button type="button" class="btn btn-primary" ng-click="getBounties()">Get Bounty</button>
+<div class="container" ng-repeat="item in bounties track by $index">
     <div class="row">
         <div class="col-xs-12 col-sm-4">
             <br>
@@ -67,12 +67,23 @@
             <p>Living: {{item.living }}</p>
             <p>Amount: {{item.bounyAmount}}</p>
             <p>Type: {{item.type}}</p>
+            <button type="button" class="btn btn-warning" ng-click="deleteBounty(item, $index)">Delete</button>
+            <button type="button" class="btn btn-primary" ng-click="editMode = !editMode">Edit</button>
+            <div ng-hide="!editMode">
+                <input type="text" size="30" placeholder="Bounty firstName" ng-model="item.firstName">
+                <input type="text" size="30" placeholder="Bounty lastName" ng-model="item.lastName">
+                <input type="text" size="30" placeholder="Living" ng-model="item.living">
+                <input type="text" size="30" placeholder="type" ng-model="item.type">
+                <button type="button" class="btn btn-primary" ng-click="editBounty(item)" >Save</button>
+            </div>
         </div>
     </div>
 </div>
+<!--
 <div ng-repeat="newitem in bounties track by $index">
    <p>{{newitem.firstName}}</p>
 </div>
+-->
 
 
 

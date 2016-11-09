@@ -17,7 +17,7 @@ var bounties = [
         type: "Sith",
         id: uuid.v4()
     },
-     {
+    {
         firstName: "Derak",
         lastName: "Darkgranite",
         living: false,
@@ -25,7 +25,7 @@ var bounties = [
         type: "Jedi",
         id: uuid.v4()
     },
-     {
+    {
         firstName: "Garnit",
         lastName: "Underbasher",
         living: true,
@@ -35,34 +35,34 @@ var bounties = [
     }
 ];
 
-app.get('/bounties',function(req,res){
+app.get('/bounties', function (req, res) {
     res.send(bounties)
 })
 
-app.post('/bounties', function(req,res){
+app.post('/bounties', function (req, res) {
     var bounty = req.body;
     bounty.id = uuid.v4();
     bounties.push(bounty);
     res.send(bounty);
 })
 
-app.put('/bounties/:bountyId', function(req,res){
-    bounties.forEach(function(bounty, index){
+app.put('/bounties/:bountyId', function (req, res) {
+    bounties.forEach(function (bounty, index) {
         console.log(bounty, index);
-        if(req.params.bountyId === bounty.id){
+        if (req.params.bountyId === bounty.id) {
             //console.log(bounty)
             bounties[index] = req.body;
             //console.log(bounties)
             res.send(bounties);
         }
     })
-    
+
 })
 
-app.delete('/bounties/:bountyId', function(req,res){
-    bounties.forEach(function(bounty,index){
-        if(req.params.bountyId === bounty.id){
-            bounties.splice(index,1);
+app.delete('/bounties/:bountyId', function (req, res) {
+    bounties.forEach(function (bounty, index) {
+        if (req.params.bountyId === bounty.id) {
+            bounties.splice(index, 1);
         }
     })
     res.send(bounties);
@@ -70,6 +70,6 @@ app.delete('/bounties/:bountyId', function(req,res){
 
 
 
-app.listen(8000, function(){
+app.listen(8000, function () {
     console.log("It is working");
 })
