@@ -44,27 +44,35 @@
     <br>
     <br>
     <br>
-    <h1>{{test}}</h1>
     <h1>Bounty Hunter List</h1>
-    <div class="container" ng-repeat="item in bounty">
-       <div class="row">
-       <div class="col-xs-12 col-sm-4">
-        <br>
-        <br>
-        <br>
-        <p>First Name: {{item.firstName }}</p>
-        <p>Last Name: {{item.lastName }}</p>
-        <p>Living: {{item.living }}</p>
-        <p>Amount: {{item.bountyAmount}}</p>
-        <p>Type: {{item.type}}</p>
-        </div>
+    
+    
+   <div class="container">
+    <input type="text" ng-model="bounty.firstName" size="30" placeholder="Bounty firstName">
+    <input type="text" ng-model="bounty.lastName" size="30" placeholder="Last name">
+    <input type="text" ng-model="bounty.living" size="30" placeholder="Living">
+    <input type="text" ng-model="bounty.type" size="30" placeholder="Type">
+    <button type="button" class="btn btn-primary btn-md" ng-click="createBounty(bounty)">Add bounty</button>
+
+</div>
+<button type="button" class="btn btn-primary" ng-click="getBounty()">Get Bounty</button>
+<div class="container" ng-repeat="item in bounty track by $index">
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+            <br>
+            <br>
+            <br>
+            <p>First Name: {{item.firstName }}</p>
+            <p>Last Name: {{item.lastName }}</p>
+            <p>Living: {{item.living }}</p>
+            <p>Amount: {{item.bounyAmount}}</p>
+            <p>Type: {{item.type}}</p>
         </div>
     </div>
-    <div class="container">
-    <input type = "text" ng-model="bountyInput" size="50" placeholder="Add New Bounty">
-    <button type="button" class="btn btn-primary btn-md">Add bounty</button>
-    <!-- /.container -->
-    </div>
+</div>
+<div ng-repeat="newitem in bounties track by $index">
+   <p>{{newitem.firstName}}</p>
+</div>
 
 
 
