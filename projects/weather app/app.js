@@ -1,4 +1,4 @@
-var app = angular.module("myApp", ['ngGeolocation', 'ngRoute'])
+var app = angular.module("myApp", ['ngGeolocation', 'ngRoute','zingchart-angularjs'])
 
 .config(function ($routeProvider) {
     $routeProvider.when('/', {
