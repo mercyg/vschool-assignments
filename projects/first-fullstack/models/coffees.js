@@ -1,12 +1,12 @@
 var mongoose = require("mongoose");
-var Pictoose = require("pictoose")
+//var Pictoose = require("pictoose")
 
 var coffeeReview = new mongoose.Schema({
-    model: String,
-    coffeName: String,
+    image: String,
+    coffeeName: String,
     productBy: String,
-    roastType: String,
-    grideType: String,
+    roast: String,
+    gride: String,
     allRating: [Number],
     rating: Number
 })
@@ -20,6 +20,7 @@ coffeeReview.pre("save", function (next) {
     next();
 });
 
-module.exports = mongoose.model("Coffee", coffeeReview);
+//coffeeReview.plugin(Pictoose.Plugin, ['thumbnail','brand']);
 
-coffeeReview.plugin(Pictoose.Plugin, ['thumbnail','brand']);
+
+module.exports = mongoose.model("Coffee", coffeeReview);

@@ -1,14 +1,9 @@
 var express = require("express");
-
+//var upload = multer({ dest: 'uploads/' });
 var coffeeRouter = express.Router();
 
 var Coffee = require("../models/coffees");
 
-//coffeeRouter.get("/", function(req, res) {
-//    Coffee.find(function(err, coffeeReview) {
-//        console.log(coffeeReview);
-//    });
-//});
 
 coffeeRouter.get("/", function (req, res) {
     Coffee.find(function (err, coffeeReview) {
@@ -21,9 +16,7 @@ coffeeRouter.get("/", function (req, res) {
 })
 
 coffeeRouter.post("/", function (req, res) {
-//    console.log(req.body);
     var review = new Coffee(req.body);
-    //console.log(review);
     review.save(function (err, newReview) {
         if (err) {
             res.status(500).send(err);
@@ -35,12 +28,34 @@ coffeeRouter.post("/", function (req, res) {
 
 })
 
-coffeeRouter.post("/images", function(req, res){
-   var newCoffee = new Coffee(req.body);
-    newCoffee.model.thumbnail = req.files.thumbnail.path;
-    newCoffee.model.brand = req.files.brand.path;
-    newCoffee.save();
-    res.send("ok")
+coffeeRouter.delete("/:coffeeId", function(req,res){
+    Coffee.findByIdAndRemove(req.params.coffeeId, function(err,deleteReview){
+        if(err){
+            res.status(500).send(err);
+        }else{
+            Coffee.find(function(err, coffeeReview){
+                res.send(coffeeReview);
+            })
+        }
+    })
 })
+
+coffeeRouter.put("/:coffeeId", function(req, res){
+    Coffee.findByIdAndUpdate(req.params.coffeeId, req.body,{new: true}, function(err, newReview){
+        if(err){
+            res.status(500).send(err);
+        }else{
+            res.send(newReview);
+        }
+    })
+})
+
+//coffeeRouter.post("/images", function(req, res){
+//   var newCoffee = new Coffee(req.body);
+//    newCoffee.model.thumbnail = req.files.thumbnail.path;
+//    newCoffee.model.brand = req.files.brand.path;
+//    newCoffee.save();
+//    res.send("ok")
+//})
 
 module.exports = coffeeRouter;
