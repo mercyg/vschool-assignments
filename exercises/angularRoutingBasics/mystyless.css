@@ -1,0 +1,17 @@
+h1{
+    margin-left: 40%;
+    margin-bottom: 45px;
+}
+#para{
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+#pic{
+    border-style: solid;
+    border-width: 4px;
+    height: 456px;
+}
+#talk{
+   height: 95%;
+    width: 95%;
+}
