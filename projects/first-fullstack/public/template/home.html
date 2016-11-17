@@ -1,6 +1,9 @@
+<!--
 <div class="container-fluid" id="home">
     <h1 class="hometitle" align="center">Review Coffee Brand</h1>
 </div>
+-->
+<!--
 <div class="container-fluid" id="about">
     <div class="row">
         <div class="col-xs-12 col-sm-12">
@@ -9,7 +12,21 @@
     </div>
     <div class="row">
         <div class="col-xs-12 col-sm-push-2 col-sm-6">
-            <p>Lorem lorem</p>
+            <p>Why get confussed with coffee choocesses? See what other people think abou the coffee and you can decide what you want to buy.</p>
+        </div>
+    </div>
+</div>-->
+<div class="container-fluid" id="review">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs- 12 col-md-4" ng-repeat="item in review">
+               <div class="panel panel-info">
+                <div class="panel-body"><img ng-src="{{item.image}}"></div>
+                   <div class="panel-footer"><h5 align="center">{{item.coffeeName}}</h5></div>
+                   <p align="left">Product By: {{item.productBy}}</p>
+                   <p align="left">Roast Type: {{item.roast}}</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

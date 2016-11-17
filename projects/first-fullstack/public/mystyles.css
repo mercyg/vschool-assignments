@@ -15,6 +15,18 @@
 .hometitle{
     margin-top:305px;  
 }
-#about{
-    background-color: bisque
+#review{
+    
+    margin-top: 100px;
 }
+.panel{
+    margin-top:100px;
+}
+img{
+    width: 270px;
+    height: 200px;
+}
+/*
+#about{
+    margin-top: 100px;
+}*/
