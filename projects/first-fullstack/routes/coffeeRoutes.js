@@ -33,9 +33,7 @@ coffeeRouter.delete("/:coffeeId", function(req,res){
         if(err){
             res.status(500).send(err);
         }else{
-            Coffee.find(function(err, coffeeReview){
                 res.send(coffeeReview);
-            })
         }
     })
 })
