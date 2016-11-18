@@ -4,10 +4,22 @@ app.controller("homeController", ["$scope", "HomeService",function($scope,HomeSe
     $scope.getAllReview = function(){
         HomeService.getAllReview()
             .then(function(coffeeReviews){
-                console.log(coffeeReviews)
                 $scope.review = coffeeReviews;
         })
     }
+    
+    $scope.updateRating = function(newRating, index){
+        var rateId = $scope.review[index]._id;
+        HomeService.updateRating(newRating, rateId)
+            .then(function(response){
+            
+        })
+        HomeService.getAllReview()
+            .then(function(review){
+                $scope.review = review;
+        })
+    }
+    
     
     
 function init(){
