@@ -49,13 +49,14 @@ coffeeRouter.put("/:coffeeId", function(req, res){
 })
 
 coffeeRouter.post("/:coffeeId/rating", function(req, res){
-    Coffee.findById(req.params.coffeeId, function(err, rate){
+    Coffee.findById(req.params.coffeeId, function(err, coffee){
         if(err) return res.status(500).send(err);
-        vote.allRating.push(req.body);
-        vote.save(function(err){
-            if(err) return res.status(500).send(err);
-            res.send(rate)
-        })
+         coffee.allRating.push(req.body.allRating);
+         coffee.save(function(err){
+             if(err) return res.status(500).send(err);
+             res.send(coffee)
+         })
+
     })
 })
 

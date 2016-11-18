@@ -11,6 +11,7 @@ app.service("HomeService",["$http", function($http){
     this.updateRating = function(newRating, input){
         return $http.post("/coffees/" + input + "/rating", newRating)
             .then(function(response){
+                console.log(response);
                  return response.data;
         })
     }

@@ -12,7 +12,7 @@ app.controller("homeController", ["$scope", "HomeService",function($scope,HomeSe
         var rateId = $scope.review[index]._id;
         HomeService.updateRating(newRating, rateId)
             .then(function(response){
-            
+            console.log(response);
         })
         HomeService.getAllReview()
             .then(function(review){
