@@ -8,17 +8,29 @@ app.service("HomeService",["$http", function($http){
         })
     }
     
-    this.updateRating = function(newRating, input){
-        return $http.post("/coffees/" + input + "/rating", newRating)
+    this.updateRating = function(review){
+        return $http.put("/coffees/" + review._id + "/rating", review)
             .then(function(response){
                 console.log(response);
                  return response.data;
         })
     }
     
+    
 }])
 
 
+
+
+
 app.service("AboutService", ["$http", function($http){
+    this.creatReview = function(input){
+        return $http.post("/coffees/", input)
+            .then(function(response){
+                return response.data;
+        })
+    }
+    
+    
     
 }])

@@ -9,10 +9,14 @@ app.controller("homeController", ["$scope", "HomeService",function($scope,HomeSe
     }
     
     $scope.updateRating = function(newRating, index){
-        var rateId = $scope.review[index]._id;
-        HomeService.updateRating(newRating, rateId)
+        var review = $scope.review[index];
+        review.allRating.push(newRating);
+        var rate = parseInt(newRating)
+        console.log(newRating)
+        HomeService.updateRating(review)
             .then(function(response){
-            console.log(response);
+            
+           // console.log(response);
         })
         HomeService.getAllReview()
             .then(function(review){
@@ -29,6 +33,11 @@ init()
     
 }])
 
-app.controller("aboutController", ["$scope", function($scope){
-    $scope.test = "This is the about page"
+app.controller("aboutController", ["$scope", "AboutService", function($scope, AboutService){
+    $scope.creatReview = function(input){
+        AboutService.creatReview(input)
+            .then(function){
+                $scope.
+        }
+    }
 }]);

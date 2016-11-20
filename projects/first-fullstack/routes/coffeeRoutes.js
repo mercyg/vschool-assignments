@@ -33,7 +33,7 @@ coffeeRouter.delete("/:coffeeId", function(req,res){
         if(err){
             res.status(500).send(err);
         }else{
-                res.send(coffeeReview);
+           res.send(coffeeReview);
         }
     })
 })
@@ -48,14 +48,15 @@ coffeeRouter.put("/:coffeeId", function(req, res){
     })
 })
 
-coffeeRouter.post("/:coffeeId/rating", function(req, res){
+coffeeRouter.put("/:coffeeId/rating", function(req, res){
     Coffee.findById(req.params.coffeeId, function(err, coffee){
-        if(err) return res.status(500).send(err);
-         coffee.allRating.push(req.body.allRating);
-         coffee.save(function(err){
-             if(err) return res.status(500).send(err);
-             res.send(coffee)
-         })
+        
+              
+        if(err) return res.send("123");
+         coffee.allRating.push(req.body.allRating[req.body.allRating.length-1]);
+           //console.log(coffee);
+         coffee.save();
+         
 
     })
 })
