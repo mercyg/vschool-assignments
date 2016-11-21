@@ -5,7 +5,7 @@ var app = angular.module("myApp", ["ngRoute", "ui.bootstrap"])
         controller: 'homeController',
         templateUrl: '../template/home.html'
     }).when('/about',{
-        controller: 'aboutController',
+        controller: 'homeController',
         templateUrl: '../template/about.html'
     })
 })

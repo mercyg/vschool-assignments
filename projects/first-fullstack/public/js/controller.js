@@ -24,7 +24,14 @@ app.controller("homeController", ["$scope", "HomeService",function($scope,HomeSe
         })
     }
     
-    
+     $scope.creatReview = function(input){
+         //console.log( "controller: " + input)
+        HomeService.creatReview(input)
+            .then(function(response){
+            //console.log(response)
+               // $scope.review.push(response)
+        })
+    }
     
 function init(){
     $scope.getAllReview();
@@ -33,11 +40,6 @@ init()
     
 }])
 
-app.controller("aboutController", ["$scope", "AboutService", function($scope, AboutService){
-    $scope.creatReview = function(input){
-        AboutService.creatReview(input)
-            .then(function){
-                $scope.
-        }
-    }
-}]);
+//app.controller("aboutController", ["$scope", "AboutService", function($scope, AboutService){
+//   
+//}]);
