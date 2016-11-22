@@ -1,3 +1,4 @@
+/*
 #home{
      background: url(http://www.paleoplan.com/wp-content/uploads/2015/02/is-coffee-paleo.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -6,6 +7,7 @@
   background-size: cover;
     height:700px;
 }
+*/
 .navbar-inverse{
     background-color:saddlebrown;
 }
@@ -15,10 +17,7 @@
 .hometitle{
     margin-top:305px;  
 }
-#review{
-    
-    margin-top: 100px;
-}
+
 .panel{
     margin-top:100px;
 }
@@ -29,7 +28,26 @@ img{
 form{
     margin-top: 100px;
 }
+
+#about{
+     background: url(http://www.paleoplan.com/wp-content/uploads/2015/02/is-coffee-paleo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    height:700px;
+}
+#title{
+    margin-top:100px;
+}
+.control-label{
+    color: brown;
+}
+h3{
+    color: firebrick;
+}
 /*
+
 #about{
     margin-top: 100px;
 }*/

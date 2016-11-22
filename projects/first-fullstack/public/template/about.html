@@ -1,6 +1,7 @@
-<div class="container">
+<div class="container-fluid" id="about">
     <div class="row">
         <div class="col-xs-12 col-sm-7 col-md-offset-2">
+           <h1 text-align="center" id="title">Review Form</h1>
             <form class="form-horizontal" role="form">
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Coffee Name:</label>
@@ -33,10 +34,10 @@
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Rating</label>
                     <div class="col-sm-2">
-                        <input type="number" class="form-control" placeholder="rating" ng-model="newreview.allRating">
+                        <input type="number" class="form-control" placeholder="rate your coffee from 1 to 5" ng-model="newreview.allRating">
                     </div>
                     <div class="col-sm-4">
-                        <button type="submit" class="btn btn-sucess" ng-click="creatReview(newreview)">Submit</button>
+                        <button type="submit" class="btn btn-sucess" ng-click="creatReview(newreview)" >Submit</button>
                     </div>
                 </div>
 
@@ -49,4 +50,13 @@
             </form>
         </div>
     </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-push-4">
+            <h3>Sign up and get your personlaized coffee list. </h3>
+        </div>
+    </div>
 </div>
+
+
+
+

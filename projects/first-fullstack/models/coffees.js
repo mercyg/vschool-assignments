@@ -7,7 +7,7 @@ var coffeeReview = new mongoose.Schema({
     productBy: String,
     roast: String,
     gride: String,
-    allRating: [],
+    allRating: [Number],
     rating: Number
 })
 
