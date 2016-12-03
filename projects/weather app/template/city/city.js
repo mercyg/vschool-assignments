@@ -17,7 +17,7 @@ app.service("CityService", ["$http", function ($http) {
                 
                 cities.weather = response.data.main.temp;
                 cities.highLow = response.data.main.temp_min;
-                cities.lowHigh = response.data.mmain.temp_max;
+                cities.lowHigh = response.data.main.temp_max;
            // var icons = response.data.weather[0].icon
 //                cities.icons = response.data.weather[0].icon;
                 return cities;
@@ -41,6 +41,7 @@ app.controller("cityController", ["$scope", "CityService", "SharedService",funct
     
         CityService.cityWeather(SharedService.savedData)
             .then(function (cities) {
+            console.log(cities)
                 $scope.cities= cities;
             })
     
