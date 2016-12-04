@@ -46,6 +46,7 @@ app.controller("myCtrl", ["$scope", "BountyService", function ($scope, BountySer
     }
 
     $scope.createBounty = function(input){
+        console.log(input)
         BountyService.createBounty(input)
             .then(function(data){
                 $scope.bounties.push(data);
